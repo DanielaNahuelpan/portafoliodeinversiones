@@ -7,8 +7,8 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  
+    <%#  <%= javascript_importmap_tags %> 
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
   </head>
 
@@ -16,5 +16,6 @@
       <%= render 'shared/navbar' %>
       <div class="container">
       <%= yield %>
+      </div>
   </body>
 </html>
