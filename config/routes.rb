@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+  resources :properties
   get 'home/index'
   devise_for :users,  controllers: {
     sessions: 'users/sessions',
@@ -8,5 +10,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get '/about_us', to: 'home#about_us'
+  get '/legal_info', to: 'home#legal_info'
+
   root to: "home#index"
 end

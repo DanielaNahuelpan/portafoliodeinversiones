@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sort: MyString
+  operation: MyString
+  description: MyString
+  price: MyString
+  user: one
+
+two:
+  sort: MyString
+  operation: MyString
+  description: MyString
+  price: MyString
+  user: two
